@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,23 +10,35 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
     {
         // TODO: (8) aggiungere attributi privati di Articolo
         // ...
-        public int Codice { get; private set; }
-        public string Descrizione {  get; private set; }
-        public string UnitaMisura {  get; private set; }
-        public double Prezzo {  get; private set; }
+        int codice;
+        string descrizione;
+        string unitaMisura;
+        double prezzo;
 
 
         // TODO: (9) aggiungere property di sola lettura dei dati necessari all'esterno di Articolo
         // ...
+        public string Descrizione
+        {
+            get { return descrizione; }
+        }
+        public string UnitaMisura
+        {
+            get { return unitaMisura; }
+        }
+        public double Prezzo
+        {
+            get { return prezzo; }
+        }
 
         public Articolo(int codice, string descrizione, string unitaMisura, double prezzo)
         {
             // TODO: (10) impostazione costruttore classe Articolo come utilizzato da frmMain
             // ...
-            Codice = codice;
-            Descrizione = descrizione;
-            UnitaMisura = unitaMisura;
-            Prezzo = prezzo;
+            this.codice = codice;
+            this.descrizione = descrizione;
+            this.unitaMisura = unitaMisura;
+            this.prezzo = prezzo;
         }
 
         public string Visualizzati()
