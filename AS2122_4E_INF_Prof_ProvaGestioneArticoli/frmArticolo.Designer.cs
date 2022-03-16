@@ -1,5 +1,4 @@
-﻿
-namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
+﻿namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 {
     partial class frmArticolo
     {
